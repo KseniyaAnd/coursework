@@ -1,7 +1,7 @@
 import React, {useState, useEffect, useRef} from "react";
 import {MenuBtn} from "../menu-btn/menu-btn";
 import "./header.css";
-import {useClickOutside} from "../hooks/useClickOutside";
+import {useClickOutside} from "../hooks/use-click-outside";
 import {ReactComponent as LogoImg} from "../../assets/img/logo-icon.svg";
 
 export const Header = () => {
@@ -64,7 +64,7 @@ export const Header = () => {
             <nav className={`header-nav ${isOpen ? "active" : ""}`} ref={menuRef}>
                 <ul className="header-nav-list">
                     <li className="header-nav-item">
-                        <a href="">Музей</a>
+                        <a href="#about-museum">Музей</a>
                     </li>
                     <li className="header-nav-item">
                         <a href="">Выставки</a>
