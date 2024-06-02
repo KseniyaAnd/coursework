@@ -1,0 +1,78 @@
+.museum-exhibitions-unit {
+    line-height: 16px;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
+    position: relative;
+    display: block;
+    height: 230px;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.museum-exhibitions-unit:hover img {
+    transform: scale(1.1);
+    filter: brightness(0.5);
+}
+
+.museum-exhibitions-unit-img {
+    display: flex; /* Добавляем Flexbox */
+    justify-content: center; /* Горизонтальное выравнивание по центру */
+    align-items: center; /* Вертикальное выравнивание по центру */
+    overflow: hidden; /* Обрезаем изображение, выходящее за границы контейнера */
+    object-fit: cover;
+    width: 100%;
+    height: 200px;
+}
+
+.museum-exhibitions-unit-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: var(--surface-color);
+    transform: translateY(100%);
+    transition: .2s ease-in-out;
+}
+
+.museum-exhibitions-unit:hover .museum-exhibitions-unit-overlay {
+    transform: translateY(0);
+}
+
+.museum-exhibitions-unit-header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 15px 10px;
+    background-color: var(--surface-color);
+    transform: translateY(-100%);
+    transition: .2s ease-in-out;
+}
+
+.museum-exhibitions-unit-arc {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+    z-index: 1;
+}
+
+.museum-exhibitions-unit:hover .museum-exhibitions-unit-header {
+    transform: translateY(0);
+}
+
+.museum-exhibitions-unit-title {
+    font-size: 16px;
+    color: #dedede;
+}
+
+.museum-exhibitions-unit-description {
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 15px 10px;
+    margin: 0;
+    color: #f3d039;
+    overflow: hidden;
+}

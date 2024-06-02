@@ -16,9 +16,16 @@ class App extends Component {
                 {src: require('../../assets/img/slider-img-3.jpg'), alt: 'slider-img', id: 3},
                 {src: require('../../assets/img/slider-img-4.jpg'), alt: 'slider-img', id: 4},
                 {src: require('../../assets/img/slider-img-5.jpg'), alt: 'slider-img', id: 5},
+            ],
+            exhibitions: [
+                {imgSrc: require('../../assets/img/exhibition-china.png'), title: 'Тур по Китаю | Диснастия Ся', link: '', id: 1},
+                {imgSrc: require('../../assets/img/exhibition-repin.png'), title: 'Тур по биографии И. Е. Репина', link: '', id: 2},
+                {imgSrc: require('../../assets/img/exhibition-egypt-early-kingdom.png'), title: 'Тур по Египту | Раннее царство', link: '', id: 3}
             ]
+
         }
     }
+
 
     render() {
         return (
@@ -26,6 +33,7 @@ class App extends Component {
                 <Header/>
                 <Main
                     sliderPics={this.state.sliderPics}
+                    exhibitions={this.state.exhibitions}
                 />
             </div>
         )

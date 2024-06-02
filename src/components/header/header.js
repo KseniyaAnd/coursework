@@ -67,7 +67,7 @@ export const Header = () => {
                         <a href="#about-museum">Музей</a>
                     </li>
                     <li className="header-nav-item">
-                        <a href="">Выставки</a>
+                        <a href="#museum-exhibitions">Выставки</a>
                     </li>
                     <li className="header-nav-item">
                         <a href="">События</a>
