@@ -2,6 +2,7 @@ import {Component} from "react";
 
 import {Header} from "../header/header";
 import {Main} from "../main/main";
+import {Footer} from "../footer/footer";
 
 import {ReactComponent as InstLogo} from "../../assets/img/media-icons/ico-inst.svg";
 import {ReactComponent as LinkedinLogo} from "../../assets/img/media-icons/ico-linkedin.svg";
@@ -89,6 +90,7 @@ class App extends Component {
                     exhibitions={this.state.exhibitions}
                     socialMedias={this.state.socialMedias}
                 />
+                <Footer/>
             </div>
         )
     }
