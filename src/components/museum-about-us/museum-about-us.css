@@ -1,0 +1,10 @@
+.museum-about-us{
+    background-color: black;
+    color: #c5c5c5;
+    padding: 60px 140px;
+    font-size: 19px;
+    line-height: 30px;
+    font-weight: 600;
+    display: flex;
+    gap: 20px;
+}

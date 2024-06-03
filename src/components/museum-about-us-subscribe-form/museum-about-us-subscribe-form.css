@@ -1,0 +1,96 @@
+.museum-about-us-subscribe-form-input {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+}
+
+.museum-about-us-subscribe-form-input input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.museum-about-us-subscribe-form-input button[type="submit"] {
+    background-color: #c5c5c5;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: .3s ease;
+}
+
+.museum-about-us-subscribe-form-input button[type="submit"]:hover {
+    color: rgb(255, 255, 255);
+    background-color: #f3d039;
+}
+
+.museum-about-us-subscribe-form-checkbox {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.museum-about-us-subscribe-form-checkbox label {
+    display: flex;
+    align-items: center;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+/* Контейнер для кастомного чекбокса */
+.custom-checkbox {
+    margin-right: 5px;
+    display: inline-block;
+    position: relative;
+    width: 15px;
+    height: 15px;
+    background-color: yellow;
+    border: 0;
+    cursor: pointer;
+}
+
+/* Галочка внутри кастомного чекбокса */
+.custom-checkbox::after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 35%;
+    top: 5%;
+    width: 4px;
+    height: 9px;
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+/* Показ галочки, когда чекбокс активен */
+input[type="checkbox"]:checked + .custom-checkbox::after {
+    display: block;
+}
+
+.museum-about-us-subscribe-form-input input.invalid {
+    border: 1px solid #ff0000;
+}
+
+.museum-about-us-subscribe-form-input button[type="submit"].invalid {
+    border-left: 1px solid #ff0000;
+    border-top: 1px solid #f3d039;
+    border-right: 1px solid #f3d039;
+    border-bottom: 1px solid #f3d039;
+}
+
+.museum-about-us-subscribe-form-input input[type="text"]:focus {
+    border: 1px solid transparent; /* Remove border when input is focused */
+    outline: none; /* Remove outline */
+}
+
+
+
+

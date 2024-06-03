@@ -1,0 +1,14 @@
+.museum-about-us-subscribe {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 19px;
+    line-height: 30px;
+    font-weight: 600;
+}
+
+.museum-about-us-subscribe-tittle {
+    display: flex;
+    justify-content: flex-end;
+}

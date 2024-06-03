@@ -70,10 +70,10 @@ export const Header = () => {
                         <a href="#museum-exhibitions">Выставки</a>
                     </li>
                     <li className="header-nav-item">
-                        <a href="">События</a>
+                        <a href="#museum-history-events">События</a>
                     </li>
                     <li className="header-nav-item">
-                        <a href="">О нас</a>
+                        <a href="#museum-about-us">О нас</a>
                     </li>
                 </ul>
             </nav>
