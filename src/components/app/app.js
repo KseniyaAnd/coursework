@@ -12,7 +12,6 @@ import {ReactComponent as YoutubeLogo} from "../../assets/img/media-icons/ico-yo
 
 import './app.css';
 
-
 class App extends Component {
     constructor(props) {
         super(props);
@@ -43,8 +42,7 @@ class App extends Component {
                     link: '',
                     id: 3
                 }
-            ]
-            ,
+            ],
             socialMedias: [
                 {
                     imgSrc: <InstLogo/>,
@@ -80,7 +78,6 @@ class App extends Component {
         }
     }
 
-
     render() {
         return (
             <div className="app">
@@ -97,3 +94,4 @@ class App extends Component {
 }
 
 export default App;
+
